@@ -1,15 +1,19 @@
 @font-face {
-    font-family: 'Calibri Regular';
-    font-style: normal;
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.woff2') format('woff2'),
+    url('../fonts/Calibri.woff') format('woff');
     font-weight: normal;
-    src: local('Calibri Regular'), url('../fonts/Calibri.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Calibri Bold';
+    src: url('../fonts/Calibri-Bold.woff2') format('woff2'),
+    url('../fonts/Calibri-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
-    font-weight: normal;
-    src: local('Calibri Bold'), url('../fonts/Calibribold.woff') format('woff');
+    font-display: swap;
 }
 
 
@@ -195,6 +199,7 @@ body {
     align-items: center;
     gap:8px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 .icon-arrow{
 
@@ -206,20 +211,9 @@ body {
 .btn:active{
     background: #337BCC;
 }
-.btn-small{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
-}
 
-.button-holder{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 14px;
-    grid-row-gap: 14px;
-    max-width: 368px;
-    margin: 0 auto 35px;
-}
+
+
 .buttons-wrap{
     display: flex;
     flex-direction: column;
@@ -228,10 +222,8 @@ body {
     margin: 0 auto 35px;
 }
 
-
-
 .link{
-    font: 400 15px "Futura New", sans-serif;
+    font: 400 15px "Calibri", sans-serif;
     letter-spacing: 0.02em;
     text-decoration-skip-ink: none;
     text-align: center;
@@ -247,11 +239,13 @@ body {
     color: #fff;
     text-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 .regular-title.small-mode{
     font: 700 22px "Calibri", sans-serif;
     letter-spacing: 0.02em;
+    text-transform: none;
 }
 
 .regular-text{
@@ -278,15 +272,13 @@ body {
 .mb-45{
     margin-bottom: 45px;
 }
-.mt-50{
-    margin-top: 50px;
+.mb-75{
+    margin-bottom: 75px;
 }
-.mt-90{
-    margin-top: 90px;
+.mb-90{
+    margin-bottom: 90px;
 }
-.mt-140{
-    margin-top: 140px;
-}
+
 .footer{
     background-color: #FFFFFF;
     text-align: center;
@@ -298,17 +290,8 @@ body {
     margin: 0 auto;
 }
 
-
-
-
-
 @media (min-width: 375px) {
     .footer img{
       min-height: 102px;
-    }
-}
-@media (min-width: 480px) {
-    .main-content{
-
     }
 }
