@@ -50,8 +50,8 @@ body {
 }
 .regular-bg{
     background-image: url("../img/bg.jpg");
-    background-position: center;
-    background-repeat: repeat;
+    background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: calc(100vh - 102px);
 }
@@ -171,7 +171,7 @@ body {
     height: 35px;
     background-image: url("../img/icons/check.svg");
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .bottom-holder{
@@ -246,6 +246,7 @@ body {
     text-align: center;
     color: #fff;
     text-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 0;
 }
 
 .regular-title.small-mode{
@@ -265,7 +266,10 @@ body {
     font: 700 50px "Calibri", sans-serif;
     letter-spacing: 0.02em;
     text-align: center;
+    display: block;
     color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
 }
 
 .mb-25{
