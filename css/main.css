@@ -53,11 +53,14 @@ body {
     min-height: calc(100vh - 102px);
 }
 .regular-bg{
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/regular-bg.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: calc(100vh - 102px);
+}
+.regular-bg.last-mode{
+    background-image: url("../img/bg.jpg");
 }
 .main-content{
     padding-top: 51px;
