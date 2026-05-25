@@ -88,7 +88,7 @@ body {
     display: block;
 }
 .img-icon{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .items-holder{
     display: flex;
@@ -275,8 +275,8 @@ body {
 .mb-25{
     margin-bottom: 25px;
 }
-.mb-55{
-    margin-bottom: 55px;
+.mb-45{
+    margin-bottom: 45px;
 }
 .mt-50{
     margin-top: 50px;
