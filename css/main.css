@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Calibri Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Calibri Regular'), url('../fonts/Calibri.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Calibri Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Calibri Bold'), url('../fonts/Calibribold.woff') format('woff');
+}
+
+
+*,::after,::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: Calibri,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    min-width: 320px;
+    margin: 0;
+    min-height: 100vh;
+}
+.container{
+    padding: 0 15px;
+}
+.main-bg{
+    background-image: url("../img/main-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 102px);
+}
+.regular-bg{
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: calc(100vh - 102px);
+}
+.main-content{
+    padding-top: 51px;
+    padding-bottom: 53px;
+}
+.regular-content{
+    padding: 111px 0 58px;
+    text-align: center;
+}
+
+
+.small-content{
+    padding: 65px 0 5px;
+    text-align: center;
+}
+
+.img-camel{
+    max-width: 230px;
+    width: 100%;
+    margin: 40px auto 48px;
+    display: block;
+}
+.img-logo{
+    max-width: 396px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+.img-year{
+    max-width: 138px;
+    margin: 0 auto;
+    display: block;
+}
+.img-icon{
+    margin-bottom: 50px;
+}
+.items-holder{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    max-width: 394px;
+    margin: 32px auto 58px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.item-icon{
+    height: 89px;
+    width: 89px;
+}
+.item-icon img{
+    max-width: 100%;
+}
+
+.item-text{
+    font: 700 22px "Calibri-Bold", sans-serif;
+    letter-spacing: 0;
+    line-height: 29px;
+    color: #ffd000;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.checkbox-row{
+    display: flex;
+    gap:10px;
+    max-width: 363px;
+    margin: 0 auto 16px;
+}
+.row-text{
+    color: #ffffff;
+    font: 400 14px "Futura New", sans-serif;
+    letter-spacing: 0.02em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.row-text input{
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    position: absolute;
+}
+.row-text input:checked + span:after{
+    display: block;
+}
+.row-text span{
+   display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.row-text span:before{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0066a0;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+}
+.row-text span:after{
+    content: "";
+    display: none;
+    position: absolute;
+    left: 3px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icons/check.svg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.bottom-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 363px;
+    margin: 0 auto;
+}
+
+
+.btn{
+    height: 50px;
+    padding: 0 30px;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    transition: background-color 1s ease;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap:8px;
+    color: #ffffff;
+}
+.icon-arrow{
+
+}
+
+.btn:focus{
+    background: #337BCC;
+}
+.btn:active{
+    background: #337BCC;
+}
+.btn-small{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.button-holder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+    max-width: 368px;
+    margin: 0 auto 35px;
+}
+.buttons-wrap{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    max-width: 368px;
+    margin: 0 auto 35px;
+}
+
+
+
+.link{
+    font: 400 15px "Futura New", sans-serif;
+    letter-spacing: 0.02em;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #fff;
+    text-decoration-line: underline;
+    display: block;
+}
+
+
+.regular-title{
+    font: 700 35px / 114% "Calibri", sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.regular-title.small-mode{
+    font: 700 22px "Calibri", sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.regular-text{
+    font: 700 22px / 145% "Calibri", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.phone-link{
+    font: 700 50px "Calibri", sans-serif;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-55{
+    margin-bottom: 55px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-90{
+    margin-top: 90px;
+}
+.mt-140{
+    margin-top: 140px;
+}
+.footer{
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.footer img{
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+@media (min-width: 414px) {
+    .items-holder{
+
+    }
+    .checkbox-row{
+
+    }
+    .row-text{
+
+    }
+    .regular-title{
+
+    }
+}
+@media (min-width: 480px) {
+    .main-content{
+
+    }
+}
