@@ -298,18 +298,9 @@ body {
 
 
 
-@media (min-width: 414px) {
-    .items-holder{
-
-    }
-    .checkbox-row{
-
-    }
-    .row-text{
-
-    }
-    .regular-title{
-
+@media (min-width: 375px) {
+    .footer img{
+      min-height: 102px;
     }
 }
 @media (min-width: 480px) {
